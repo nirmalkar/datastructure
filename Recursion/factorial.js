@@ -1,7 +1,11 @@
-function fact(num) {
-  if (num === 1) return 1;
-  return num * fact(num - 1);
+function calculateFactorial(num) {
+  function helper(num) {
+    if (num === 1) return 1;
+    return num * helper(num - 1);
+  }
+
+  return helper(num);
 }
 
-const factVal = fact(4);
+const factVal = calculateFactorial(4);
 console.log(factVal);
