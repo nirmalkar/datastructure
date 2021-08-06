@@ -1,5 +1,5 @@
+// find the two number whose sum is zero.
 function sumZero(arr) {
-  let sortedArr = arr.sort();
   let pointerOne = 0;
   let pointerTwo = arr.length - 1;
   while (pointerOne < pointerTwo) {
