@@ -23,7 +23,7 @@ class SinglyLinkedList{
             this.head = newNode
             this.tail = this.head
         }else{
-            this.head.next = newNode
+            this.tail.next = newNode
             this.tail = newNode
         }
         this.length++;
@@ -32,8 +32,11 @@ class SinglyLinkedList{
 }
 
 const list = new SinglyLinkedList()
-console.log(list);
 list.push(1)
-console.log(list);
-list.push("hi")
+list.push("Hi")
+list.push("There")
+list.push("How")
+list.push("are")
+list.push("you")
+list.push("?")
 console.log(list);
