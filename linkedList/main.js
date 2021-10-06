@@ -1,1 +1,2 @@
-import SinglyLinkedList from "./push.js"
+import "./push.js";
+import "./pop.js";
