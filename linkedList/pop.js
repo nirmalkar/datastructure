@@ -11,15 +11,19 @@ SinglyLinkedList.prototype.pop = function () {
   this.tail = newTail;
   this.tail.next = null;
   this.length--;
+  if(this.length === 0){
+    this.head = null
+    this.tail = null
+  }
   return current;
 };
 
-const list = new SinglyLinkedList();
-list.push("How");
-list.push("are");
-list.push("you");
-list.push("?");
-
-list.pop();
-list.pop();
-console.log(list);
+const popList = new SinglyLinkedList();
+console.log(popList);
+popList.push("How");
+popList.push("are");
+popList.push("you");
+popList.push("?");
+popList.pop();
+popList.pop();
+console.log("After popping out two items", popList);
