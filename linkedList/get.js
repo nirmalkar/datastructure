@@ -1,4 +1,4 @@
-import { SinglyLinkedList } from './intro.js';
+import { SinglyLinkedList } from "./intro.js";
 
 SinglyLinkedList.prototype.get = function (index) {
     if (index < 0 || index >= this.length) return undefined;
@@ -13,9 +13,9 @@ SinglyLinkedList.prototype.get = function (index) {
 
 const getList = new SinglyLinkedList();
 getList.push(23);
-getList.push('Hello');
-getList.push('World');
-getList.push('!');
+getList.push("Hello");
+getList.push("World");
+getList.push("!");
 
 const valOne = getList.get(2);
 console.log(valOne);
