@@ -6,3 +6,4 @@ import "./get.js";
 import "./set.js";
 import "./insert.js";
 import "./remove.js";
+import "./reverse.js";
