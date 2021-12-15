@@ -7,7 +7,7 @@ function reverse(str) {
       return reversedStr.join("");
     }
     reversedStr.push(str[num]);
-    return helper(num - 1);
+    returnhelper(num - 1);
   }
   return helper(str.length);
 }
