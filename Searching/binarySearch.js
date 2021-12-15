@@ -13,7 +13,10 @@ function isNumExists(numArr, Num) {
         middle = Math.floor((start + end) / 2);
         console.log(start, end, middle);
     }
-    return middle;
+    if (numArr[middle] !== Num) {
+        return middle;
+    }
+    return -1;
 }
 
 const NumFoundStatus = isNumExists(numArr, 6);
