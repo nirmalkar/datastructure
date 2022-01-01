@@ -1,4 +1,9 @@
-//In Binary search tree each node has maximum two children, left one should be less than right one.
+/**
+ * A tree is a collection of nodes connected by some edges.
+ * A tree is a non linear data structure.
+ * A Binary Search tree is a binary tree in which nodes that have lesser value are stored
+ * on the left while the nodes with a higher value are stored at the right. (source geeks for geeks)
+ */
 
 class Node {
     constructor(value) {
@@ -13,7 +18,6 @@ class BinarySearchTree {
         this.root = null;
     }
     insert(value) {
-        if (!value) return this;
         if (value === this.root?.value) return this;
         const newNode = new Node(value);
         if (this.root === null) {
@@ -21,7 +25,6 @@ class BinarySearchTree {
             return this;
         } else {
             let root = this.root;
-            const newNode = new Node(value);
             while (true) {
                 if (root.value < value) {
                     if (root.right === null) {

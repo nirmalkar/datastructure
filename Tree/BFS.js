@@ -1,3 +1,4 @@
+//Breath First Search Tree
 BinarySearchTree.prototype.BFS = function () {
     let node = this.root,
         data = [],
@@ -13,10 +14,12 @@ BinarySearchTree.prototype.BFS = function () {
 };
 
 var tree = new BinarySearchTree();
-tree.insert(10);
+tree.insert(12);
 tree.insert(6);
-tree.insert(15);
-tree.insert(3);
+tree.insert(4);
 tree.insert(8);
-tree.insert(20);
+tree.insert(15);
+tree.insert(14);
+tree.insert(16);
+tree.insert(13);
 console.log(tree.BFS());

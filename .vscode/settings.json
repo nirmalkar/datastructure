@@ -1,10 +1,11 @@
 {
-  "eslint.options": {
-    "configfile": ".eslintrc.json"
-  },
-  "eslint.validate": ["javascript", "javascriptReact"],
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
-  "editor.formatOnSave": true
+    "eslint.options": {
+        "configfile": ".eslintrc.json"
+    },
+    "eslint.validate": ["javascript", "javascriptReact"],
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "editor.formatOnSave": true,
+    "debug.inlineValues": true
 }

@@ -1,3 +1,8 @@
+/**
+ *
+ *
+ */
+
 BinarySearchTree.prototype.DFSPreOrder = function () {
     const data = [];
     function DFSPreOrderFunc(root) {
@@ -10,12 +15,10 @@ BinarySearchTree.prototype.DFSPreOrder = function () {
 };
 
 const newDFSPreOrderTree = new BinarySearchTree();
-newDFSPreOrderTree.insert(12);
+newDFSPreOrderTree.insert(10);
 newDFSPreOrderTree.insert(6);
-newDFSPreOrderTree.insert(4);
-newDFSPreOrderTree.insert(8);
 newDFSPreOrderTree.insert(15);
-newDFSPreOrderTree.insert(14);
-newDFSPreOrderTree.insert(16);
-newDFSPreOrderTree.insert(13);
+newDFSPreOrderTree.insert(3);
+newDFSPreOrderTree.insert(8);
+newDFSPreOrderTree.insert(20);
 console.log(newDFSPreOrderTree.DFSPreOrder());
