@@ -7,5 +7,6 @@
         "source.fixAll.eslint": true
     },
     "editor.formatOnSave": true,
-    "debug.inlineValues": true
+    "debug.inlineValues": true,
+    "liveServer.settings.port": 5501
 }

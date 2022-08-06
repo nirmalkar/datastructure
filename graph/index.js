@@ -37,23 +37,8 @@ export class Graph {
         });
         delete this.adjacencyList[vertexToBeRemoved];
     }
-    depthFirstRecursive(start) {
-        const adjacencyList = this.adjacencyList;
-        if (!adjacencyList[start]) return "Vertex not present in the graph";
-        const result = [];
-        const visited = {};
-        (function bfs(vertex) {
-            result.push(vertex);
-            visited[vertex] = true;
-            adjacencyList[vertex].forEach((neighbor) => {
-                if (!visited[neighbor]) {
-                    return bfs(neighbor);
-                }
-            });
-        })(start);
-        return result;
-    }
 }
+console.log(Math);
 
 const g = new Graph();
 g.addVertex("India");
@@ -72,4 +57,4 @@ console.log(g);
 g.removeEdge("Canada", "Pakistan");
 console.log(g);
 g.removeVertex("Pakistan");
-console.log(g);
+console.log("Graph at first", g);
